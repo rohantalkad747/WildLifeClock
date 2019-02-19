@@ -110,7 +110,6 @@ public class Alarm implements Parcelable {
         try {
             dateTime = parcelableDateTimeFormatter.parseDateTime(parcelableAlarmTimeString);
         } catch (IllegalArgumentException e) {
-            e.printStackTrace();
         }
     }
 
