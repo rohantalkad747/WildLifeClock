@@ -39,14 +39,10 @@ public class SettingsFragment extends Fragment {
     }
 
     @Override
-    public void setHint(boolean isVisibleToUser) {
-        super.setHint(isVisibleToUser);
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
         
-        if (tabLayout.getTabAt(position) == null) {
-            return;
-        }
-        
-        if (tabLayout == null || deactivated == null || animation == null) {
+        if (tabLayout.getTabAt(position) == null || tabLayout == null || deactivated == null || animation == null) {
             return;
         }
 
